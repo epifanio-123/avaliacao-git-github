@@ -1,15 +1,13 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,
-initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Avaliação Git e GitHub</title>
 <style>
 body {
 font-family: Arial, sans-serif;
-background-color: #f4f4f4;
+background-color: #dbeafe; 
 text-align: center;
 padding: 50px;
 }
@@ -18,9 +16,6 @@ color: #24292e;
 }
 p {
 font-size: 18px;
-
-Shell
-
 color: #333;
 }
 .container {
@@ -31,15 +26,52 @@ width: 60%;
 margin: auto;
 box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+button {
+background-color: #24292e;
+color: white;
+border: none;
+padding: 10px 20px;
+font-size: 16px;
+border-radius: 5px;
+cursor: pointer;
+margin-top: 15px;
+font-weight: bold;
+}
+button:hover {
+background-color: #333;
+}
+/* Estilo para o nome que vai aparecer */
+#nome-aluno {
+margin-top: 20px;
+font-size: 22px;
+color: #0056b3;
+font-weight: bold;
+display: none; /* Começa escondido */
+}
 </style>
 </head>
 <body>
 <div class="container">
-<h1>Minha Avaliação de Git e GitHub</h1>
-<p>
-Este projeto foi criado para praticar versionamento
+<h1>Projeto Atualizado de Git e GitHub</h1>
+<h2>Versionamento de código com Git</h2>
 
-utilizando
+<p>
+Este projeto foi criado para praticar versionamento utilizando Git, GitHub e Visual Studio Code.
+</p>
+
+<button onclick="mostrarNome()">Clique Aqui</button>
+
+<p id="nome-aluno">Aluno: Alyne Epifanio dos Santos</p>
+</div>
+
+<script>
+function mostrarNome() {
+    var elementoNome = document.getElementById("nome-aluno");
+    elementoNome.style.display = "block"; // Faz o nome aparecer
+}
+</script>
+</body>
+</html>
 
 Git, GitHub e Visual Studio Code.
 </p>
